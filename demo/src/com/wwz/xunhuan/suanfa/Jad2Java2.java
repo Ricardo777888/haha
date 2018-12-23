@@ -2,6 +2,10 @@ package com.wwz.xunhuan.suanfa;
 
 import java.io.*;
 
+/**
+ * 编写一个程序，将d:\java目录下的所有.java文件复制到d:\jad目录下，
+ * 并将原来文件的扩展名从.java改为.jad。
+ */
 public class Jad2Java2 {
     public static void main(String[] args) throws Exception {
         File srcDir=new File("D:\\usr\\test\\java");
