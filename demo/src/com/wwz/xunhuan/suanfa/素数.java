@@ -1,19 +1,25 @@
 package com.wwz.xunhuan.suanfa;
 
+
+
 public class 素数 {
       public static void main(String[] args) {
-          boolean flag;
-          for (int i = 100; i <= 200; i++) {
-              flag=false;
-              for (int j = 2; j <= Math.sqrt(i); j++) {
-                    if (i%j==0){
-                        flag=true;
-                        break;
-                    }
-              }if (flag==false)
-              System.out.println(i);
-          }
+          boolean ex;
 
+          for (int i = 2; i <= 100; i++) {
+              // if(i == 1 || (i % 2 == 0 && i != 2 ) )  continue;
+              ex = true;
+              for (int j = 2; j <= Math.sqrt(i); j++) {
+                  if (i % j == 0) {
+                      ex = false;
+                      break;
+                  }
+              }
+              if (ex) {
+                  System.out.print(i+" ");
+              }
+          }
       }
 }
+
 

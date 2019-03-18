@@ -7,7 +7,7 @@ public class aa {
                 if (i%13==9){
                     if (i%19==15){
                         System.out.println(i);
-                    }
+                }
                 }
 
             }
